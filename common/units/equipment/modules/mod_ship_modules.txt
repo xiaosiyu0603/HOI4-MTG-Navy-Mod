@@ -1,0 +1,35 @@
+equipment_modules = {
+
+	ship_light_battery_4 = {
+		category = ship_light_battery
+		parent = ship_light_battery_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 3.0
+			anti_air_attack = 3.0
+			build_cost_ic = 175
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 2.5
+		}
+
+		can_convert_from = {
+			module_category = ship_light_battery
+			convert_cost_ic = 190
+		}
+
+		can_convert_from = {
+			module = ship_light_battery_3
+			convert_cost_ic = 120
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+}

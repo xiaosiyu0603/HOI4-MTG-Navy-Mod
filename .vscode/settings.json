@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+        "*.gfx": "ruby",
+        "*.gui": "ruby",
+        "*.txt": "ruby",
+    },
+}

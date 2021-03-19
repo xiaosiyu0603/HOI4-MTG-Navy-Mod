@@ -556,6 +556,9 @@ technologies = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 7 }
 		}
+		sub_technologies = {
+			basic_ship_hull_aa_cruiser
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -574,6 +577,40 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+		}
+	}
+
+	basic_ship_hull_aa_cruiser = {
+
+		enable_equipments = {
+			ship_hull_aa_cruiser
+		}
+
+		research_cost = 0.5
+
+		start_year = 1936
+
+		# folder = {
+		# 	name = mtgnavalfolder
+		# 	position = {  x = -1 y = 7 }
+		# }
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
 		}
 	}
 

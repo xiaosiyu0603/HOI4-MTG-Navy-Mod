@@ -402,7 +402,7 @@ guiTypes = {
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x=330 y=0 }
+						position = { x=340 y=0 }	# { x=330 y=0 }	285+(60-5)=340
 					}
 				}
 				containerWindowType = {
@@ -413,7 +413,7 @@ guiTypes = {
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x=330 y=0 }
+						position = { x=340 y=0 }	# { x=330 y=0 }	285+(60-5)=340
 					}
 				}
 
@@ -426,7 +426,7 @@ guiTypes = {
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_super_heavy_hull_fixed_heavy_battery"
-						position = { x=330 y=0 }
+						position = { x=340 y=0 }	# { x=330 y=0 }	285+(60-5)=340
 					}
 				}
 				containerWindowType = {
@@ -437,7 +437,7 @@ guiTypes = {
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_super_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x=330 y=0 }
+						position = { x=340 y=0 }	# { x=330 y=0 }	285+(60-5)=340
 					}
 				}
 			}
@@ -505,7 +505,7 @@ guiTypes = {
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x=365 y=0 }
+						position = { x=395 y=0 }	#{ x=365 y=0 }	285+(60-5)*2=395
 					}
 				}
 				containerWindowType = {
@@ -516,7 +516,7 @@ guiTypes = {
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x=365 y=0 }
+						position = { x=395 y=0 }	#{ x=365 y=0 }	285+(60-5)*2=395
 					}
 				}
 
@@ -529,7 +529,7 @@ guiTypes = {
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_super_heavy_hull_fixed_heavy_battery"
-						position = { x=365 y=0 }
+						position = { x=395 y=0 }	#{ x=365 y=0 }	285+(60-5)*2=395
 					}
 				}
 				containerWindowType = {
@@ -540,7 +540,7 @@ guiTypes = {
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_super_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x=365 y=0 }
+						position = { x=395 y=0 }	#{ x=365 y=0 }	285+(60-5)*2=395
 					}
 				}
 
@@ -782,6 +782,30 @@ guiTypes = {
 						position = { x=188 y=0 }
 					}
 				}
+
+				#### MODULE: Airplane Launcher ####
+				containerWindowType = {
+					name = "ship_airplane_launcher"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_super_heavy_hull_rear2_airplane_launcher"
+						position = { x=50 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_airplane_launcher@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_super_heavy_hull_rear2_airplane_launcher@highlight"
+						position = { x=50 y=0 }
+					}
+				}
 			}
 
 
@@ -929,8 +953,8 @@ guiTypes = {
 
 					iconType = {
 						name = "image"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries"
-						position = { x=70 y=0 }
+						spriteType = "GFX_SM_super_heavy_hull_rear1_secondaries"
+						position = { x=142 y=0 }
 					}
 				}
 				containerWindowType = {
@@ -940,8 +964,8 @@ guiTypes = {
 
 					iconType = {
 						name = "highlight"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries@highlight"
-						position = { x=70 y=0 }
+						spriteType = "GFX_SM_super_heavy_hull_rear1_secondaries@highlight"
+						position = { x=142 y=0 }
 					}
 				}
 

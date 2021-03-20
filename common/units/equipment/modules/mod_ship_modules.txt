@@ -67,4 +67,44 @@ equipment_modules = {
 		critical_parts = { damaged_light_guns }
 	}
 
+	ship_armor_shbb = {
+		category = ship_super_heavy_armor
+		gfx = ship_armor_thick_2	# ship_armor_thick_3
+
+		multiply_stats = {
+			build_cost_ic = 0.25
+			naval_speed = -0.25
+			max_strength = 0.1
+		}
+		build_cost_resources = {
+			steel = 2
+			chromium = 1
+		}
+		add_stats = {
+			armor_value = 55
+			surface_visibility = 10
+		}
+		dismantle_cost_ic = 8200
+	}
+
+	ship_armor_shbb_3 = {
+		category = ship_super_heavy_armor
+		gfx = ship_armor_thick_3
+
+		multiply_stats = {
+			build_cost_ic = 0.275
+			naval_speed = -0.25
+			max_strength = 0.15
+		}
+		build_cost_resources = {
+			steel = 2
+			chromium = 1
+		}
+		add_stats = {
+			armor_value = 65		# 55
+			surface_visibility = 10
+		}
+		dismantle_cost_ic = 9000	# 8200
+	}
+
 }

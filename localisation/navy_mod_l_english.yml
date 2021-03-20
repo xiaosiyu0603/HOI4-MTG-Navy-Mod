@@ -2,3 +2,10 @@
  ship_hull_aa_cruiser_desc:0 "采用防空巡洋舰的设计思路建造的巡洋舰，防空能力强，对舰方面就薄弱许多。"
  ship_hull_aa_cruiser:1 "防空巡洋舰船体"
  basic_ship_hull_aa_cruiser:0 "防空巡洋舰船体"
+ ship_armor_shbb_3:0 "480mm主装甲/250mm甲板装甲"
+ ship_armor_shbb_3_short:0 "改良超重型装甲"
+ ship_armor_shbb_3_desc:0 "最新的装甲设计方案，目的是抵御所有已知的主炮炮弹，并让一艘装备如此精良的战列舰能够接触并击沉当今世界上的任何其他战列舰。"
+ JAP_ship_armor_shbb_3:0 "410mm主装甲/230mm甲板装甲"
+ USA_ship_armor_shbb:0 "16英寸主装甲带8英寸甲板装甲"
+ USA_ship_armor_shbb_3:0 "18英寸主装甲带10英寸甲板装甲"
+

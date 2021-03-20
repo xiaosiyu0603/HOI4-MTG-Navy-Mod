@@ -1794,6 +1794,9 @@ early_ship_hull_carrier = {
 			name = mtgnavalfolder
 			position = {  x = -2 y = 13 }
 		}
+		sub_technologies = {
+			cruiser_submarines
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -3600,11 +3603,28 @@ early_ship_hull_carrier = {
 			ship_extra_fuel_tank
 		}
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 
 		#set at gamestart
-		allow = {
-			always = no
+		# allow = {
+		# 	always = no
+		# }
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				OR = {
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ss_tech
 		}
 	}
 }

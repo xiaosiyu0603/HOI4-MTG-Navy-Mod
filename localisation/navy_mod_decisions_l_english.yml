@@ -1,0 +1,11 @@
+﻿l_english:
+ navy_mod_ship_design:0 "设计部门"
+ navy_mod_ship_design_desc:0 "设计部门的官僚们从废纸堆里发现了我们以前的设计图纸，根据图纸可以生产史实型号的装备。"
+ navy_mod_ship_design_USA_DD_Porter_Class:0 "1936年驱逐领舰：§Y波特级§!"
+ navy_mod_ship_design_USA_DD_Porter_Class_desc:0 "§Y波特级（Porter-class）§!§G驱逐舰§!是美国海军在30年代的舰队更新计划中所开发的第二种驱逐舰，也是美国第一种以§G驱逐领舰§!为概念所开发的舰艇。\n\n将§Y波特级§!§G驱逐舰§!添加到设计模板。"
+ navy_mod_ship_design_USA_DD_Mahan_Class:0 "1934年驱逐舰：§Y马汉级§!"
+ navy_mod_ship_design_USA_DD_Mahan_Class_desc:0 "§Y马汉级（Mahan-class）§!§G驱逐舰§!是美国在1934年~1935年间建造的驱逐舰，本级以海权论的提倡者§G阿尔弗雷德·赛耶·马汉§!为首舰命名。\n\n将§Y马汉级§!§G驱逐舰§!添加到设计模板。"
+ navy_mod_ship_design_USA_DD_Sims_Class:0 "1937年驱逐舰：§Y西姆斯级§!"
+ navy_mod_ship_design_USA_DD_Sims_Class_desc:0 "§Y西姆斯级（Sims-class）§!§G驱逐舰§!是美国海军在第二次世界大战前建造完成的最后一级驱逐舰。本级延续前级§Y班汉级§!的设计，仍为单轮机室单烟囱，但是加长船长，并首度安装Mk37射控系统。主炮增为5门Mk.12 5吋38倍径高平两用炮，鱼雷最早时安装3座4联装发射管，如同§Y马汉级§!的配置，但服役后很快就发现重心过高问题，于是将一座鱼雷管拆除并改为放置中央。\n\n将§Y西姆斯级§!§G驱逐舰§!添加到设计模板。"
+ navy_mod_ship_design_USA_SS_Salmon_Class:0 "1936年潜艇：§Y鲑鱼级§!"
+ navy_mod_ship_design_USA_SS_Salmon_Class_desc:0 "§Y鲑鱼级（Salmon-class）§!§G潜艇§!是30年代“舰队潜艇”概念设计的里程碑，改进自§Y海豚级§!。这是美国第一种装备可靠的推进装置、航速达到21节的潜艇，使其能够与水面舰队的一般战舰共同行动。此外，他们11000海里（20000公里）未加油航程使他们能够在日本的水域中行动。\n\n将§Y鲑鱼级§!§G潜艇§!添加到设计模板。"

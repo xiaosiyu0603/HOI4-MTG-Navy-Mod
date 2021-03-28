@@ -1,0 +1,96 @@
+navy_mod_ship_design = {
+
+	# 波特级
+	navy_mod_ship_design_USA_DD_Porter_Class = {
+
+		icon = generic_naval
+
+		visible = {
+			original_tag = USA
+			has_tech = basic_ship_hull_light
+		}
+		available = {
+			has_tech = basic_ship_hull_light
+			has_tech = basic_light_battery					# ship_light_battery_2
+			has_tech = gw_artillery							# ship_anti_air_1
+			has_tech = sonar								# ship_sonar_1
+			has_tech = basic_torpedo						# ship_torpedo_1
+			has_tech = basic_depth_charges					# ship_depth_charge_1
+			has_navy_experience > 10
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "波特级"
+				type = ship_hull_light_2
+				name_group = USA_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_depth_charge_1
+					rear_1_custom_slot = ship_light_battery_2
+				}
+				# if = {	# 看起来并没有用
+				# 	limit = { date > 1937.1.1 }
+				# 	obsolete = yes
+				# }
+			}
+			navy_experience = -10
+		}
+	}
+
+	# 马汉级
+	navy_mod_ship_design_USA_DD_Mahan_Class = {
+
+		icon = generic_naval
+
+		visible = {
+			original_tag = USA
+			has_tech = basic_ship_hull_light
+		}
+		available = {
+			has_tech = basic_ship_hull_light
+			has_tech = basic_light_battery					# ship_light_battery_2
+			has_tech = gw_artillery							# ship_anti_air_1
+			# has_tech = electronic_mechanical_engineering	# ship_fire_control_system_0
+			has_tech = sonar								# ship_sonar_1
+			# has_tech = light_ship_engine_2
+			has_tech = basic_torpedo						# ship_torpedo_1
+			has_tech = basic_depth_charges					# ship_depth_charge_1
+			has_navy_experience > 10
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "马汉级"
+				type = ship_hull_light_2
+				name_group = USA_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
+				}
+			}
+			navy_experience = -10
+		}
+	}
+
+
+}

@@ -1,0 +1,84 @@
+navy_mod_ship_design = {
+
+	# 鲑鱼级
+	navy_mod_ship_design_USA_SS_Salmon_Class = {
+
+		icon = generic_naval
+
+		visible = {
+			original_tag = USA
+			has_tech = basic_ship_hull_submarine
+			has_start_date < 1939.1.1
+		}
+		available = {
+			has_tech = basic_ship_hull_submarine
+			has_navy_experience > 10
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "鲑鱼级/重牙鲷级"				# represents Salmon and Sargo classes
+				type = ship_hull_submarine_2
+				name_group = USA_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_torpedo_slot = ship_torpedo_sub_2
+					fixed_ship_engine_slot = sub_ship_engine_2
+					rear_1_custom_slot = ship_torpedo_sub_2
+				}
+			}
+			navy_experience = -10
+		}
+	}
+
+	# 西姆斯级
+	navy_mod_ship_design_USA_DD_Sims_Class = {
+
+		icon = generic_naval
+
+		visible = {
+			original_tag = USA
+			has_tech = basic_ship_hull_light
+			has_start_date < 1939.1.1
+		}
+		available = {
+			has_tech = basic_ship_hull_light
+			has_tech = gw_artillery
+			has_tech = sonar
+			has_tech = basic_torpedo
+			has_tech = basic_depth_charges
+			OR = {
+				has_tech = dp_secondary_battery
+				date > 1939.1.1
+			}
+			has_navy_experience > 10
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "西姆斯级"					# represents Gridley, Bagley, Benham, Sims classes
+				type = ship_hull_light_2
+				name_group = USA_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
+				}
+			}
+			navy_experience = -10
+		}
+	}
+
+}

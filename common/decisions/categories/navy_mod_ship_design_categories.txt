@@ -1,5 +1,5 @@
 navy_mod_ship_design = {
-	picture = GFX_decision_cat_picture_naval_treaties
+	# picture = GFX_decision_cat_picture_naval_treaties
 
 	allowed = {
 		has_dlc = "Man the Guns"

@@ -1097,6 +1097,7 @@ technologies = {
 			bc_tech
 		}
 	}
+
 	basic_heavy_armor_scheme = {
 
 		enable_equipment_modules = {

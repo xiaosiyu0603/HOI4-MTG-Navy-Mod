@@ -1,0 +1,127 @@
+navy_mod_ship_design = {
+
+	navy_mod_equipment_design_USA_basic_ship_hull_heavy = { # TODO: 可能不再需要了
+
+		icon = generic_prepare_civil_war
+
+		visible = {
+			original_tag = USA
+			has_tech = early_ship_hull_heavy
+			NOT = { has_tech = basic_ship_hull_heavy }
+		}
+		available = {
+			has_tech = early_ship_hull_heavy
+			# date > 1936.1.2
+			# date > 1938.1.1
+			has_navy_experience > 50
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = navy_mod_equipment_design_bonus
+				bonus = 1.0
+				technology = basic_ship_hull_heavy
+			}
+			navy_experience = -50
+		}
+	}
+
+	navy_mod_equipment_design_USA_improved_ship_hull_heavy = {
+
+		icon = generic_prepare_civil_war
+
+		visible = {
+			original_tag = USA
+			has_tech = basic_ship_hull_heavy
+			NOT = { has_tech = improved_ship_hull_heavy }
+		}
+		available = {
+			has_tech = basic_ship_hull_heavy
+			# date > 1936.1.2
+			date > 1938.1.1
+			has_navy_experience > 50
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = navy_mod_equipment_design_ahead_reduction
+				ahead_reduction = 2
+				technology = improved_ship_hull_heavy
+			}
+			navy_experience = -50
+		}
+	}
+
+	navy_mod_equipment_design_USA_dp_secondary_battery = {
+
+		icon = generic_prepare_civil_war
+
+		visible = {
+			original_tag = USA
+			has_tech = improved_secondary_battery
+			NOT = { has_tech = dp_secondary_battery }
+		}
+		available = {
+			has_tech = improved_secondary_battery
+			# date > 1936.1.2
+			date > 1938.1.1
+			has_navy_experience > 50
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_technology = {	# TODO: 考虑换成无视超前惩罚
+				dp_secondary_battery = 1
+			}
+			navy_experience = -50
+		}
+	}
+
+	navy_mod_equipment_design_USA_improved_heavy_battery = {
+
+		icon = generic_prepare_civil_war
+
+		visible = {
+			original_tag = USA
+			has_tech = basic_heavy_battery
+			NOT = { has_tech = improved_heavy_battery }
+			date > 1937.1.1		# TODO:需要测试
+		}
+		available = {
+			has_tech = basic_heavy_battery
+			# date > 1936.1.2
+			date > 1938.1.1		# TODO:需要测试
+			has_navy_experience > 50
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = navy_mod_equipment_design_ahead_reduction
+				ahead_reduction = 2
+				# uses = 1
+				technology = improved_heavy_battery
+				# category = armor
+			}
+			# add_tech_bonus = {
+			# 	name = navy_mod_equipment_design_bonus
+			# 	bonus = 1.0
+			# 	uses = 2
+			# 	# technology = basic_medium_tank
+			# 	category = armor
+			# }
+			navy_experience = -50
+		}
+	}
+
+}

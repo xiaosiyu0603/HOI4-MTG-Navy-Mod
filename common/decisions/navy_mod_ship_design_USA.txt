@@ -6,6 +6,7 @@ navy_mod_ship_design = {
 		icon = generic_naval
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = basic_ship_hull_light
 		}
@@ -53,6 +54,7 @@ navy_mod_ship_design = {
 		icon = generic_naval
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = basic_ship_hull_light
 		}
@@ -98,6 +100,7 @@ navy_mod_ship_design = {
 		icon = generic_naval
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = improved_ship_hull_heavy
 			# has_start_date < 1939.1.1

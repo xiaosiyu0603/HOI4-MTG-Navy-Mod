@@ -5,6 +5,7 @@ navy_mod_ship_design = {
 		icon = generic_prepare_civil_war
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = early_ship_hull_heavy
 			NOT = { has_tech = basic_ship_hull_heavy }
@@ -34,6 +35,7 @@ navy_mod_ship_design = {
 		icon = generic_prepare_civil_war
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = basic_ship_hull_heavy
 			NOT = { has_tech = improved_ship_hull_heavy }
@@ -63,6 +65,7 @@ navy_mod_ship_design = {
 		icon = generic_prepare_civil_war
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = improved_secondary_battery
 			NOT = { has_tech = dp_secondary_battery }
@@ -90,6 +93,7 @@ navy_mod_ship_design = {
 		icon = generic_prepare_civil_war
 
 		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = basic_heavy_battery
 			NOT = { has_tech = improved_heavy_battery }

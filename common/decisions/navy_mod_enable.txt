@@ -1,0 +1,41 @@
+navy_mod_ship_design = {
+
+	navy_mod_enable = {
+
+		# icon = generic_naval
+
+		visible = {
+			hidden_trigger = {
+				has_global_flag = flag_navy_mod_disabled
+			}
+		}
+		# available = {
+		# }
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			clr_global_flag = flag_navy_mod_disabled
+		}
+	}
+
+	navy_mod_disable = {
+
+		# icon = generic_naval
+
+		visible = {
+			hidden_trigger = {
+				NOT = { has_global_flag = flag_navy_mod_disabled }
+			}
+		}
+		# available = {
+		# }
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = flag_navy_mod_disabled
+		}
+	}
+
+}

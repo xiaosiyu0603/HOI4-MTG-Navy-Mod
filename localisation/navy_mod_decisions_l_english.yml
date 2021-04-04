@@ -6,6 +6,10 @@
  # ==== GENERAL ====
  navy_mod_ship_design:0 "设计部门"
  navy_mod_ship_design_desc:0 "设计部门的官僚们从废纸堆里发现了我们以前的设计图纸，根据图纸可以生产史实型号的装备。\n\n颜色测试：§AtestA§! §BtestB§! §CtestC§! §DtestD§! §EtestE§! §FtestF§! §GtestG§! §HtestH§! §ItestI§! §JtestJ§! §KtestK§! §LtestL§! §MtestM§! §NtestN§! §OtestO§! §PtestP§! §QtestQ§! §RtestR§! §StestS§! §TtestT§! §UtestU§! §VtestV§! §WtestW§! §XtestX§! §YtestY§! §ZtestZ§!"
+ flag_navy_mod_disabled:0 "海军设计部门决议已禁用"
+ navy_mod_enable:0 "§R启用设计部门决议§!"
+ navy_mod_disable:0 "§R禁用设计部门决议§!"
+ navy_mod_disable_desc:0 "如果你觉得这个功能太OP破坏平衡，就禁用吧。"
  navy_mod_equipment_design_bonus:0 "决策获得的海军装备研究加速"
  navy_mod_equipment_design_ahead_reduction:0 "决策获得的海军装备研究无视超前惩罚"
 

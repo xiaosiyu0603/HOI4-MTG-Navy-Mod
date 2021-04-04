@@ -5,9 +5,9 @@ navy_mod_ship_design = {
 		has_dlc = "Man the Guns"
 	}
 
-	available = {
-		always = yes
-	}
+	# available = {
+	# 	always = yes
+	# }
 
 	visible = {
 		any_owned_state = {

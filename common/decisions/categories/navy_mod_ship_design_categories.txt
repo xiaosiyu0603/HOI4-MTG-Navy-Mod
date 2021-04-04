@@ -9,9 +9,9 @@ navy_mod_ship_design = {
 	# 	always = yes
 	# }
 
-	visible = {
-		any_owned_state = {
-			is_coastal = yes
-		}
-	}
+	# visible = {
+	# 	any_owned_state = {
+	# 		is_coastal = yes
+	# 	}
+	# }
 }

@@ -2,39 +2,41 @@
  # MACRO
  navy_mod_TODO:0 "§R待完成§!"
  navy_mod_TODO_MARK:0 "§RTODO:§! "
+ navy_mod_COLOR_TEST:0 "颜色测试：§AtestA§! §BtestB§! §CtestC§! §DtestD§! §EtestE§! §FtestF§! §GtestG§! §HtestH§! §ItestI§! §JtestJ§! §KtestK§! §LtestL§! §MtestM§! §NtestN§! §OtestO§! §PtestP§! §QtestQ§! §RtestR§! §StestS§! §TtestT§! §UtestU§! §VtestV§! §WtestW§! §XtestX§! §YtestY§! §ZtestZ§! \n£victory_points £infinity_icon £army_experience £organization_texticon  £navy_experience £navprod_cost £naval_factory_icon £convoy_texticon  £air_experience £production_cost  £national_unity_texticon £manpower_texticon £pol_power £prod_eff £prod_eff_cap  £tech_mod £pol_idea £civ_factory_output £factory_item £supply_texticon  £trigger_yes £trigger_no  £resources_strip  £0 £1 £2 £3 £4 £5 £6 £7 £8 £9 £a £b £c £d £e £f £g £h £i £j £k £l £m £n £o £p £q £r £s £t £u £v £w £x £y £z £F1 £F2 £F3 £F4 £F5 £F6 £F7 £F8 £F9 £F10 £back £end £home £PAGE_UP £PAGE_DOWN £ESCAPE £shift £ctrl £alt £tab £SPACE £RETURN £KP_PLUS £KP_MINUS £DEL £COMMA £PERIOD"
 
  # ==== GENERAL ====
  navy_mod_ship_design:0 "设计部门"
- navy_mod_ship_design_desc:0 "设计部门的官僚们从废纸堆里发现了我们以前的设计图纸，根据图纸可以生产史实型号的装备。\n\n颜色测试：§AtestA§! §BtestB§! §CtestC§! §DtestD§! §EtestE§! §FtestF§! §GtestG§! §HtestH§! §ItestI§! §JtestJ§! §KtestK§! §LtestL§! §MtestM§! §NtestN§! §OtestO§! §PtestP§! §QtestQ§! §RtestR§! §StestS§! §TtestT§! §UtestU§! §VtestV§! §WtestW§! §XtestX§! §YtestY§! §ZtestZ§!"
+ navy_mod_ship_design_desc:0 "设计部门的官僚们从废纸堆里发现了我们以前的设计图纸，根据图纸可以生产史实型号的装备。\n\n$navy_mod_COLOR_TEST$"
  flag_navy_mod_disabled:0 "海军设计部门决议已禁用"
  navy_mod_enable:0 "§R启用设计部门决议§!"
+ navy_mod_enable_desc:0 "$navy_mod_TODO$"
  navy_mod_disable:0 "§R禁用设计部门决议§!"
- navy_mod_disable_desc:0 "如果你觉得这个功能太OP破坏平衡，就禁用吧。"
+ navy_mod_disable_desc:0 "如果你觉得这个功能太OP破坏平衡，就禁用吧。\n\n$navy_mod_COLOR_TEST$"
  navy_mod_equipment_design_bonus:0 "决策获得的海军装备研究加速"
  navy_mod_equipment_design_ahead_reduction:0 "决策获得的海军装备研究无视超前惩罚"
 
  # ==== EQUIPMENT ====
  # USA
- navy_mod_equipment_design_USA_basic_ship_hull_heavy:0 "下一代§L$ship_hull_heavy$§!：§G$ship_hull_heavy_2$§!"
+ navy_mod_equipment_design_USA_basic_ship_hull_heavy:0 "下一代§G$ship_hull_heavy$§!：§L$ship_hull_heavy_2$§!"
  navy_mod_equipment_design_USA_basic_ship_hull_heavy_desc:0 "$navy_mod_TODO_MARK$§Y$ship_hull_heavy_2$§!：$ship_hull_heavy_2_desc$"
- navy_mod_equipment_design_USA_improved_ship_hull_heavy:0 "下一代§L$ship_hull_heavy$§!：§G$ship_hull_heavy_3$§!"
+ navy_mod_equipment_design_USA_improved_ship_hull_heavy:0 "下一代§G$ship_hull_heavy$§!：§L$ship_hull_heavy_3$§!"
  navy_mod_equipment_design_USA_improved_ship_hull_heavy_desc:0 "$navy_mod_TODO_MARK$§Y$ship_hull_heavy_3$§!：$ship_hull_heavy_3_desc$"
- navy_mod_equipment_design_USA_improved_heavy_battery:0 "下一代§L$EQ_MOD_CAT_ship_heavy_battery_TITLE$§!：§G$USA_ship_heavy_battery_4$§!"
+ navy_mod_equipment_design_USA_improved_heavy_battery:0 "下一代§G$EQ_MOD_CAT_ship_heavy_battery_TITLE$§!：§L$USA_ship_heavy_battery_4$§!"
  navy_mod_equipment_design_USA_improved_heavy_battery_desc:0 "§Y$ship_heavy_battery_3_short$§!：$advanced_heavy_battery_desc$"
- navy_mod_equipment_design_USA_dp_secondary_battery:0 "下一代§L$dp_secondary_battery$§!：§G$USA_dp_light_battery$§! 和 §G$USA_dp_ship_secondaries$§!"
+ navy_mod_equipment_design_USA_dp_secondary_battery:0 "下一代§G$dp_secondary_battery$§!：§L$USA_dp_light_battery$§! 和 §L$USA_dp_ship_secondaries$§!"
  navy_mod_equipment_design_USA_dp_secondary_battery_desc:0 "$navy_mod_TODO$"
 
  # ==== SHIP DESIGN ====
  # USA
- navy_mod_ship_design_USA_DD_Porter_Class:0 "1936年驱逐领舰：§Y波特级§!"
+ navy_mod_ship_design_USA_DD_Porter_Class:0 "1936年§G驱逐舰§!：§Y波特级§!"
  navy_mod_ship_design_USA_DD_Porter_Class_desc:0 "§Y波特级（Porter-class）§!§G驱逐舰§!是美国海军在30年代的舰队更新计划中所开发的第二种驱逐舰，也是美国第一种以§G驱逐领舰§!为概念所开发的舰艇。\n\n将§Y波特级§!§G驱逐舰§!添加到设计模板。"
- navy_mod_ship_design_USA_DD_Mahan_Class:0 "1934年驱逐舰：§Y马汉级§!"
+ navy_mod_ship_design_USA_DD_Mahan_Class:0 "1934年§G驱逐舰§!：§Y马汉级§!"
  navy_mod_ship_design_USA_DD_Mahan_Class_desc:0 "§Y马汉级（Mahan-class）§!§G驱逐舰§!是美国在1934年~1935年间建造的驱逐舰，本级以海权论的提倡者§C阿尔弗雷德·赛耶·马汉§!为首舰命名。\n\n将§Y马汉级§!§G驱逐舰§!添加到设计模板。"
- navy_mod_ship_design_USA_DD_Sims_Class:0 "1937年驱逐舰：§Y西姆斯级§!"
+ navy_mod_ship_design_USA_DD_Sims_Class:0 "1937年§G驱逐舰§!：§Y西姆斯级§!"
  navy_mod_ship_design_USA_DD_Sims_Class_desc:0 "§Y西姆斯级（Sims-class）§!§G驱逐舰§!是美国海军在第二次世界大战前建造完成的最后一级驱逐舰。本级延续前级§Y班汉级§!的设计，仍为单轮机室单烟囱，但是加长船长，并首度安装Mk37射控系统。主炮增为5门Mk.12 5吋38倍径高平两用炮，鱼雷最早时安装3座4联装发射管，如同§Y马汉级§!的配置，但服役后很快就发现重心过高问题，于是将一座鱼雷管拆除并改为放置中央。\n\n将§Y西姆斯级§!§G驱逐舰§!添加到设计模板。"
- navy_mod_ship_design_USA_SS_Salmon_Class:0 "1936年潜艇：§Y鲑鱼级§!"
+ navy_mod_ship_design_USA_SS_Salmon_Class:0 "1936年§G潜艇§!：§Y鲑鱼级§!"
  navy_mod_ship_design_USA_SS_Salmon_Class_desc:0 "§Y鲑鱼级（Salmon-class）§!§G潜艇§!是30年代“舰队潜艇”概念设计的里程碑，改进自§Y海豚级§!。这是美国第一种装备可靠的推进装置、航速达到21节的潜艇，使其能够与水面舰队的一般战舰共同行动。此外，他们11000海里（20000公里）未加油航程使他们能够在日本的水域中行动。\n\n将§Y鲑鱼级§!§G潜艇§!添加到设计模板。"
- navy_mod_ship_design_USA_DD_Benson_Class:0 "1938年驱逐舰：§Y本森级§!和§Y格里维斯级§!"
+ navy_mod_ship_design_USA_DD_Benson_Class:0 "1938年§G驱逐舰§!：§Y本森级§!和§Y格里维斯级§!"
  navy_mod_ship_design_USA_DD_Benson_Class_desc:0 "§Y本森级（Benson-class）§!和§Y格里维斯级（Gleaves-class）§!§G驱逐舰§!是美国海军在二次大战以前以及进行中建造的驱逐舰级，改采锅炉和轮机室交错配置方式提高生存力。本级为§Y西姆斯级§!的改良型，为了避免发生被一颗鱼雷刚好打中动力系统时造成完全丧失动力的风险，本级采用§Y奥马哈级§!轻巡洋舰类似的配置，两个锅炉室分得很开，因此恢复两根烟囱构型。 §Y本森级§!和§Y格里维斯级§!舰体设计几乎一样，但§Y格里维斯级§!是交由Gibbs & Cox设计，使用通用的轮机系统，而§Y本森级§!使用伯利恒钢铁厂独家的轮机系统。\n\n将§Y本森级§!和§Y格里维斯级§!§G潜艇§!§G驱逐舰§!添加到设计模板。"
- navy_mod_ship_design_USA_BB_NorthCarolina_Class:0 "1937年战列舰：§Y$USA_battleship_2$§!"
+ navy_mod_ship_design_USA_BB_NorthCarolina_Class:0 "1937年§G战列舰§!：§Y$USA_battleship_2$§!"
  navy_mod_ship_design_USA_BB_NorthCarolina_Class_desc:0 "$USA_battleship_2_desc$"

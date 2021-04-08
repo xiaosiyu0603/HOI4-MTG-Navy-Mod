@@ -1,0 +1,45 @@
+navy_mod_ship_design = {
+
+	# (原版)F2A Buffalo
+	navy_mod_ship_design_USA_cv_fighter1_F2A = {
+
+		icon = generic_air
+
+		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
+			original_tag = USA
+			has_tech = cv_fighter1
+			has_start_date < 1939.1.1
+		}
+		available = {
+			has_tech = cv_fighter1
+			OR = {
+				has_air_experience > 100
+				date > 1939.1.1
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "F2A 水牛"
+				type = cv_fighter_equipment_1
+				upgrades = {
+					cv_plane_gun_upgrade = 5
+					cv_plane_range_upgrade = 0
+					plane_engine_upgrade = 2
+					plane_reliability_upgrade = 5
+				}
+			}
+			if = {
+				limit = {
+					date < 1939.1.1
+				}
+				air_experience = -100
+			}
+		}
+	}
+
+}

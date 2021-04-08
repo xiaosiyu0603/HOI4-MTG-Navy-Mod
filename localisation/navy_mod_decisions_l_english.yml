@@ -40,3 +40,8 @@
  navy_mod_ship_design_USA_DD_Benson_Class_desc:0 "§Y本森级（Benson-class）§!和§Y格里维斯级（Gleaves-class）§!§G驱逐舰§!是美国海军在二次大战以前以及进行中建造的驱逐舰级，改采锅炉和轮机室交错配置方式提高生存力。本级为§Y西姆斯级§!的改良型，为了避免发生被一颗鱼雷刚好打中动力系统时造成完全丧失动力的风险，本级采用§Y奥马哈级§!轻巡洋舰类似的配置，两个锅炉室分得很开，因此恢复两根烟囱构型。 §Y本森级§!和§Y格里维斯级§!舰体设计几乎一样，但§Y格里维斯级§!是交由Gibbs & Cox设计，使用通用的轮机系统，而§Y本森级§!使用伯利恒钢铁厂独家的轮机系统。\n\n将§Y本森级§!和§Y格里维斯级§!§G潜艇§!§G驱逐舰§!添加到设计模板。"
  navy_mod_ship_design_USA_BB_NorthCarolina_Class:0 "1937年§G战列舰§!：§Y$USA_battleship_2$§!"
  navy_mod_ship_design_USA_BB_NorthCarolina_Class_desc:0 "$USA_battleship_2_desc$"
+
+ # ==== AIRSHIP DESIGN ====
+ # USA
+ navy_mod_ship_design_USA_cv_fighter1_F2A:0 "§G$cv_fighter_equipment_1$§!改进型：§YF2A 水牛§!"
+ navy_mod_ship_design_USA_cv_fighter1_F2A_desc:0 "§YF2A水牛（Buffalo）§!§G战斗机§!，由布鲁斯特航空公司设计生产，是美国海军第一架单翼舰上战斗机。§Y水牛式§!在1939年替代§Y格鲁曼F3F§!战斗机，但受限于不稳定的飞行设计与超重，机动性不如§Y零式§!§G战斗机§!。驾驶§YF2A§!的飞行员对其评价不佳，甚至称它为飞行棺材。大部分的§YF2A§!在1942年就折损殆尽除役，仅有芬兰空军持续运用到1948年才退役。 "

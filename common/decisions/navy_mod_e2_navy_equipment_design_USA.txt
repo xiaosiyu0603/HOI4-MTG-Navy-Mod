@@ -1,8 +1,7 @@
 navy_mod_ship_design = {
 
-	navy_mod_equipment_design_USA_basic_ship_hull_heavy = { # TODO: 可能不再需要了
-
-		icon = generic_prepare_civil_war
+	navy_mod_equipment_design_USA_basic_ship_hull_heavy = {
+		icon = generic_research
 
 		visible = {
 			NOT = { has_global_flag = flag_navy_mod_disabled }
@@ -32,18 +31,21 @@ navy_mod_ship_design = {
 
 	navy_mod_equipment_design_USA_improved_ship_hull_heavy = {
 
-		icon = generic_prepare_civil_war
+		icon = generic_research
 
 		visible = {
 			NOT = { has_global_flag = flag_navy_mod_disabled }
 			original_tag = USA
 			has_tech = basic_ship_hull_heavy
 			NOT = { has_tech = improved_ship_hull_heavy }
+			date < 1940.1.1
 		}
 		available = {
 			has_tech = basic_ship_hull_heavy
 			# date > 1936.1.2
+			# date < 1936.1.3
 			date > 1938.1.1
+			date < 1940.1.1
 			has_navy_experience > 50
 		}
 		fire_only_once = yes
@@ -54,6 +56,37 @@ navy_mod_ship_design = {
 			add_tech_bonus = {
 				name = navy_mod_equipment_design_ahead_reduction
 				ahead_reduction = 2
+				technology = improved_ship_hull_heavy
+			}
+			navy_experience = -50
+		}
+	}
+
+	navy_mod_equipment_design_USA_improved_ship_hull_heavy_1940 = {
+
+		icon = generic_research
+
+		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
+			original_tag = USA
+			has_tech = basic_ship_hull_heavy
+			NOT = { has_tech = improved_ship_hull_heavy }
+			date > 1940.1.1
+		}
+		available = {
+			has_tech = basic_ship_hull_heavy
+			# date > 1936.1.3
+			date > 1940.1.1
+			has_navy_experience > 50
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = navy_mod_equipment_design_ahead_reduction
+				bonus = 1.0
 				technology = improved_ship_hull_heavy
 			}
 			navy_experience = -50

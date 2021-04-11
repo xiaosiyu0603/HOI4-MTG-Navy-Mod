@@ -3,6 +3,12 @@
  navy_mod_TODO:0 "§R待完成§!"
  navy_mod_TODO_MARK:0 "§RTODO:§! "
  navy_mod_COLOR_TEST:0 "颜色测试：§AtestA§! §BtestB§! §CtestC§! §DtestD§! §EtestE§! §FtestF§! §GtestG§! §HtestH§! §ItestI§! §JtestJ§! §KtestK§! §LtestL§! §MtestM§! §NtestN§! §OtestO§! §PtestP§! §QtestQ§! §RtestR§! §StestS§! §TtestT§! §UtestU§! §VtestV§! §WtestW§! §XtestX§! §YtestY§! §ZtestZ§! \n£victory_points £infinity_icon £army_experience £organization_texticon  £navy_experience £navprod_cost £naval_factory_icon £convoy_texticon  £air_experience £production_cost  £national_unity_texticon £manpower_texticon £pol_power £prod_eff £prod_eff_cap  £tech_mod £pol_idea £civ_factory_output £factory_item £supply_texticon  £trigger_yes £trigger_no  £resources_strip  £0 £1 £2 £3 £4 £5 £6 £7 £8 £9 £a £b £c £d £e £f £g £h £i £j £k £l £m £n £o £p £q £r £s £t £u £v £w £x £y £z £F1 £F2 £F3 £F4 £F5 £F6 £F7 £F8 £F9 £F10 £back £end £home £PAGE_UP £PAGE_DOWN £ESCAPE £shift £ctrl £alt £tab £SPACE £RETURN £KP_PLUS £KP_MINUS £DEL £COMMA £PERIOD"
+ # NAVAL_TITLE_DESTROYERS:0 "驱逐舰"
+ # NAVAL_TITLE_CRUISERS:0 "巡洋舰"
+ # NAVAL_TITLE_BATTLECRUISERS:0 "战列巡洋舰"
+ # NAVAL_TITLE_BATTLESHIPS:0 "战列舰"
+ # NAVAL_TITLE_CARRIERS:0 "航空母舰"
+ # NAVAL_TITLE_SUBMARINES:0 "潜艇"
 
  # ==== GENERAL ====
  navy_mod_ship_design:0 "设计部门"
@@ -21,6 +27,8 @@
  navy_mod_equipment_design_USA_basic_ship_hull_heavy_desc:0 "$navy_mod_TODO_MARK$§Y$ship_hull_heavy_2$§!：$ship_hull_heavy_2_desc$"
  navy_mod_equipment_design_USA_improved_ship_hull_heavy:0 "下一代§G$ship_hull_heavy$§!：§L$ship_hull_heavy_3$§!"
  navy_mod_equipment_design_USA_improved_ship_hull_heavy_desc:0 "$navy_mod_TODO_MARK$§Y$ship_hull_heavy_3$§!：$ship_hull_heavy_3_desc$"
+ navy_mod_equipment_design_USA_improved_ship_hull_heavy_1940:0 "$navy_mod_equipment_design_USA_improved_ship_hull_heavy$"
+ navy_mod_equipment_design_USA_improved_ship_hull_heavy_1940_desc:0 "$navy_mod_equipment_design_USA_improved_ship_hull_heavy_desc$"
  navy_mod_equipment_design_USA_improved_heavy_battery:0 "下一代§G$EQ_MOD_CAT_ship_heavy_battery_TITLE$§!：§L$USA_ship_heavy_battery_4$§!"
  navy_mod_equipment_design_USA_improved_heavy_battery_desc:0 "§Y$ship_heavy_battery_3_short$§!：$advanced_heavy_battery_desc$"
  navy_mod_equipment_design_USA_dp_secondary_battery:0 "下一代§G$dp_secondary_battery$§!：§L$USA_dp_light_battery$§! 和 §L$USA_dp_ship_secondaries$§!"
@@ -28,10 +36,12 @@
 
  # ==== SHIP DESIGN ====
  # USA
- navy_mod_ship_design_USA_DD_Porter_Class:0 "1936年§G驱逐舰§!：§Y波特级§!"
+ navy_mod_ship_design_USA_DD_Porter_Class:0 "1936年§G驱逐领舰§!：§Y波特级§!"
  navy_mod_ship_design_USA_DD_Porter_Class_desc:0 "§Y波特级（Porter-class）§!§G驱逐舰§!是美国海军在30年代的舰队更新计划中所开发的第二种驱逐舰，也是美国第一种以§G驱逐领舰§!为概念所开发的舰艇。\n\n将§Y波特级§!§G驱逐舰§!添加到设计模板。"
  navy_mod_ship_design_USA_DD_Mahan_Class:0 "1934年§G驱逐舰§!：§Y马汉级§!"
  navy_mod_ship_design_USA_DD_Mahan_Class_desc:0 "§Y马汉级（Mahan-class）§!§G驱逐舰§!是美国在1934年~1935年间建造的驱逐舰，本级以海权论的提倡者§C阿尔弗雷德·赛耶·马汉§!为首舰命名。\n\n将§Y马汉级§!§G驱逐舰§!添加到设计模板。"
+ navy_mod_ship_design_USA_DD_Somers_Class:0 "1935年§G驱逐领舰§!：§Y索莫斯级§!"
+ navy_mod_ship_design_USA_DD_Somers_Class_desc:0 "§Y索莫斯级（Somers-class）§!§G驱逐领舰§!是是波特级驱逐舰的改良型，轮机改用新墨西哥级开始采用的高温高压锅炉，腾出的空间得以多安放一座鱼雷发射管。其单侧鱼雷发射管高达12具，是美国驱逐舰中最多的一级。 \n\n将§Y索莫斯级§!§G驱逐领舰§!添加到设计模板。"
  navy_mod_ship_design_USA_DD_Sims_Class:0 "1937年§G驱逐舰§!：§Y西姆斯级§!"
  navy_mod_ship_design_USA_DD_Sims_Class_desc:0 "§Y西姆斯级（Sims-class）§!§G驱逐舰§!是美国海军在第二次世界大战前建造完成的最后一级驱逐舰。本级延续前级§Y班汉级§!的设计，仍为单轮机室单烟囱，但是加长船长，并首度安装Mk37射控系统。主炮增为5门Mk.12 5吋38倍径高平两用炮，鱼雷最早时安装3座4联装发射管，如同§Y马汉级§!的配置，但服役后很快就发现重心过高问题，于是将一座鱼雷管拆除并改为放置中央。\n\n将§Y西姆斯级§!§G驱逐舰§!添加到设计模板。"
  navy_mod_ship_design_USA_SS_Salmon_Class:0 "1936年§G潜艇§!：§Y鲑鱼级§!"
@@ -40,6 +50,12 @@
  navy_mod_ship_design_USA_DD_Benson_Class_desc:0 "§Y本森级（Benson-class）§!和§Y格里维斯级（Gleaves-class）§!§G驱逐舰§!是美国海军在二次大战以前以及进行中建造的驱逐舰级，改采锅炉和轮机室交错配置方式提高生存力。本级为§Y西姆斯级§!的改良型，为了避免发生被一颗鱼雷刚好打中动力系统时造成完全丧失动力的风险，本级采用§Y奥马哈级§!轻巡洋舰类似的配置，两个锅炉室分得很开，因此恢复两根烟囱构型。 §Y本森级§!和§Y格里维斯级§!舰体设计几乎一样，但§Y格里维斯级§!是交由Gibbs & Cox设计，使用通用的轮机系统，而§Y本森级§!使用伯利恒钢铁厂独家的轮机系统。\n\n将§Y本森级§!和§Y格里维斯级§!§G潜艇§!§G驱逐舰§!添加到设计模板。"
  navy_mod_ship_design_USA_BB_NorthCarolina_Class:0 "1937年§G战列舰§!：§Y$USA_battleship_2$§!"
  navy_mod_ship_design_USA_BB_NorthCarolina_Class_desc:0 "$USA_battleship_2_desc$"
+ navy_mod_ship_design_USA_BB_SouthDakota_Class:0 "1939年§G战列舰§!：§Y南达科他级§!"
+ navy_mod_ship_design_USA_BB_SouthDakota_Class_desc:0 "$navy_mod_TODO$"
+ navy_mod_ship_design_USA_CV_WASP_Class:0 "1936年§G航空母舰§!：§Y胡蜂号§!"
+ navy_mod_ship_design_USA_CV_WASP_Class_desc:0 "§Y胡蜂号§!的建造背景极受华盛顿海军条约限制。由于美国在批准建造约克城号及企业号后，只剩下15,000吨可用作航母，海军只好将原本近20,000吨的§Y约克城级§!设计，缩减至15,000吨，以多造一艘航空母舰，使之看上去像§Y约克城级§!§G航空母舰§!的缩小版本。结果，新造的§Y胡蜂号§!比§Y约克城级§!少了25%的设备重量，连引擎也被大幅削弱。其引擎轴马力为75,000轴马力，比§Y约克城级§!的120,000轴马力、§Y埃塞克斯级§!的150,000轴马力、甚至§G轻型航母§!§Y独立级§!的100,000轴马力，都低出不少。同时，§Y胡蜂号§!基本上有效装甲为零，尤其对鱼雷的防御完全缺乏，后期追加的装甲亦无法补救这致命缺陷。\n虽然该航母设计缺陷极为致命，但她所开创性使用的侧舷升降机以及轮机舱交错式布局的表现十分良好，这两个设计在后续的§Y埃塞克斯级§!甚至是§Y中途岛级§!航母得到沿用。"
+ navy_mod_ship_design_USA_CV_Yorktown_Class_Hornet:0 "1939年§G航空母舰§!：§Y约克城级大黄蜂号§!"
+ navy_mod_ship_design_USA_CV_Yorktown_Class_Hornet_desc:0 "1936年伦敦海军条约失效，日本拒绝进行新一轮谈判，并在次年七七事变后全面侵华。§Y约克城级§!§G航空母舰§!虽然性能良好，但始终是条约限制所建，在舰体性能上难免有所局限。既然海军条约已经失效，设计新航母方案似乎是最理想的做法。然而海军当时只有六艘航空母舰在役，急需新造军舰应对日本及纳粹德国的崛起，已经等不及重新设计方案。在折衷之下，海军决定CV-8将以§Y约克城级§!方案为蓝本建造，但采取一定改良，包括安装较新的火控系统、重整舰岛结构、更强柴油轮机、新式SC雷达、厄利孔20毫米防空机炮、延长飞行甲板以及加高舰艏。"
 
  # ==== AIRSHIP DESIGN ====
  # USA

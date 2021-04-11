@@ -4,6 +4,8 @@ navy_mod_ship_design = {
 	#      驱逐舰
 	# ================
 
+	# ship_hull_light_2
+
 	# 波特级 1933.12.18
 	navy_mod_ship_design_USA_DD_Porter_Class = {
 
@@ -97,6 +99,48 @@ navy_mod_ship_design = {
 		}
 	}
 
+	# 索莫斯级 1935.6.27
+	navy_mod_ship_design_USA_DD_Somers_Class = {
+
+		icon = generic_naval
+
+		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
+			original_tag = USA
+			has_tech = basic_ship_hull_light
+		}
+		available = {
+			has_tech = basic_ship_hull_light
+			has_tech = basic_light_battery					# ship_light_battery_2
+			has_tech = sonar								# ship_sonar_1
+			has_tech = improved_ship_torpedo_launcher		# ship_torpedo_2
+			has_navy_experience > 10
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "索莫斯级"
+				type = ship_hull_light_2
+				name_group = USA_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_2
+					mid_1_custom_slot = ship_torpedo_2
+					rear_1_custom_slot = ship_light_battery_2
+				}
+			}
+			navy_experience = -10
+		}
+	}
+
 	# (原版)西姆斯级 1937.7.15
 	navy_mod_ship_design_USA_DD_Sims_Class = {
 
@@ -159,6 +203,8 @@ navy_mod_ship_design = {
 			navy_experience = -10
 		}
 	}
+
+	# ship_hull_light_3
 
 	# (原版)本森级/格里维斯级 1938.5.16
 	navy_mod_ship_design_USA_DD_Benson_Class = {
@@ -305,6 +351,94 @@ navy_mod_ship_design = {
 					mid_2_custom_slot = dp_ship_secondaries
 					mid_3_custom_slot = ship_airplane_launcher_2
 					rear_1_custom_slot = empty
+				}
+			}
+			navy_experience = -10
+		}
+	}
+
+
+	# ================
+	#     航空母舰
+	# ================
+
+	# (原版)胡蜂级 1936.4.1
+	navy_mod_ship_design_USA_CV_WASP_Class = {
+
+		icon = generic_naval
+
+		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
+			original_tag = USA
+			has_tech = basic_ship_hull_carrier
+			has_start_date < 1939.1.1
+		}
+		available = {
+			has_tech = basic_ship_hull_carrier
+			has_tech = improved_secondary_battery
+			has_navy_experience > 2
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "胡蜂级"
+				type = ship_hull_carrier_1
+				name_group = USA_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					front_1_custom_slot = ship_deck_space
+				}
+			}
+			navy_experience = -2
+		}
+	}
+
+	# 约克城级大黄蜂号 1939.9.25
+	navy_mod_ship_design_USA_CV_Yorktown_Class_Hornet = {
+
+		icon = generic_naval
+
+		visible = {
+			NOT = { has_global_flag = flag_navy_mod_disabled }
+			original_tag = USA
+			has_tech = basic_ship_hull_carrier
+			# has_start_date < 1939.1.1
+		}
+		available = {
+			has_tech = basic_ship_hull_carrier
+			has_tech = improved_secondary_battery
+			has_tech = interwar_antiair
+			has_tech = decimetric_radar
+			# date > 1939.7.15
+			has_navy_experience > 10
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_equipment_variant = {
+				name = "约克城级大黄蜂号方案"
+				type = ship_hull_carrier_1
+				name_group = USA_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					front_1_custom_slot = ship_deck_space
 				}
 			}
 			navy_experience = -10
